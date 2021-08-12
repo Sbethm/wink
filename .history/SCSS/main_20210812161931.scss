@@ -4,8 +4,6 @@ header {
     position: fixed;
     top: 0;
     height: 2rem;
-    width: 100vw;
-    padding: 1rem;
     z-index: 9;
     font-family: $accentFont;
     font-size: 2rem;
@@ -35,7 +33,7 @@ header {
 
 .slideshow--quote {
     position: absolute;
-    top: 5rem;
+    top: 4rem;
     width: 100vw;
     font-size: 100px;
     font-family: $headerFont;

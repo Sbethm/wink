@@ -100,6 +100,20 @@ input, select {
   vertical-align: middle;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  height: 2rem;
+  width: 100vw;
+  padding: 1rem;
+  z-index: 9;
+  font-family: "Indie Flower", cursive;
+  font-size: 2rem;
+  color: aliceblue;
+  overflow: hidden;
+  border-bottom: solid 1px aliceblue;
+}
+
 .main--slideshow {
   height: 100vh;
   width: 100vw;
@@ -123,6 +137,7 @@ input, select {
 
 .slideshow--quote {
   position: absolute;
+  top: 5rem;
   width: 100vw;
   font-size: 100px;
   font-family: "Acme", sans-serif;
