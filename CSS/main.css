@@ -125,6 +125,8 @@ input, select {
   position: absolute;
   width: 100vw;
   font-size: 100px;
+  font-family: "Acme", sans-serif;
+  font-weight: 800;
   color: aliceblue;
   text-align: center;
 }

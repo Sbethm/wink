@@ -1,4 +1,4 @@
-@import "./resets", "./variables";
+@import "./resets;
 
 .main--slideshow {
     height: 100vh;
@@ -24,7 +24,6 @@
     width: 100vw;
     font-size: 100px;
     font-family: $headerFont;
-    font-weight: 800;
     color: aliceblue;
     text-align: center;
 }
