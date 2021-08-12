@@ -15,14 +15,5 @@
     object-fit: cover;
     overflow: hidden;
     opacity: 0;
-    transition: all 0.75s ease-in;
-    z-index: 0;
-}
-
-.slideshow--quote {
-    position: absolute;
-    width: 100vw;
-    font-size: 100px;
-    color: aliceblue;
-    text-align: center;
+    transition: all 0.5s ease-out;
 }

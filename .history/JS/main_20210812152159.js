@@ -1,0 +1,1 @@
+const slideImg = document.se
