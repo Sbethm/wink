@@ -107,11 +107,23 @@ header {
   width: 100vw;
   padding: 1rem;
   z-index: 9;
+  overflow: hidden;
+  background: aliceblue;
+  border-bottom: solid 1px #0d518b;
+  -webkit-transition: all 0.50s ease-in;
+  transition: all 0.50s ease-in;
+}
+
+header h1 {
   font-family: "Indie Flower", cursive;
   font-size: 2rem;
-  color: aliceblue;
-  overflow: hidden;
-  border-bottom: solid 1px aliceblue;
+  color: #0d518b;
+  -webkit-transition: all 0.50s ease-in;
+  transition: all 0.50s ease-in;
+}
+
+.menu--item {
+  display: none;
 }
 
 .main--slideshow {
@@ -137,7 +149,7 @@ header {
 
 .slideshow--quote {
   position: absolute;
-  top: 5rem;
+  top: calc(100vh - 75vh);
   width: 100vw;
   font-size: 100px;
   font-family: "Acme", sans-serif;
