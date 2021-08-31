@@ -1,0 +1,204 @@
+@import "./resets", "./variables";
+
+
+//GENERAL STYLING
+body{
+    width: 100vw;
+    background-color: $bgColor1;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100vw;
+    height: fit-content;
+    background-color: $bgColor1;
+    color: $accentColor1;
+    font-family: $mainFont;
+    font-size: 1rem;
+}
+
+.container {
+    margin: 60px 20px;
+    padding: 60px 0;
+    width: calc(100vw - 40px);
+    background-color: $bgColor1;
+    border-top: solid 2px $accentColor2;
+    border-bottom: solid 2px $accentColor2;
+}
+
+.heading--center {
+    padding-bottom: 60px;
+    width: 100%;
+    font-family: $accentFont;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: $mainFont;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.img--set--left {
+    width: 75vw;
+    position: relative;
+    left: -20px;
+    z-index: 1;
+    border-radius: 0 15px 15px 0;
+}
+
+.img--set--right {
+    width: 75vw;
+    position: relative;
+    right: -75px;
+    z-index: 1;
+    border-radius: 15px 0 0 15px;
+}
+
+//HEADER AND MAIN SLIDESHOW
+header {
+    position: fixed;
+    top: 0;
+    height: 2rem;
+    width: 100vw;
+    padding: 1rem;
+    z-index: 9;
+    overflow: hidden;
+    background: aliceblue;
+    border-bottom: solid 1px rgb(13, 81, 139);
+    transition: all 0.50s ease-in;
+
+    & h1 {
+        font-family: $accentFont;
+        font-size: 2rem;
+        color: rgb(13, 81, 139);
+        transition: all 0.50s ease-in;
+    }
+}
+
+.menu--item{
+    display: none;
+}
+
+.main--slideshow {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+
+#slide--img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.75s ease-in;
+    z-index: 0;
+}
+
+.slideshow--quote {
+    position: absolute;
+    top: calc(100vh - 75vh);
+    width: 100vw;
+    font-size: ;
+    font-family: $headerFont;
+    font-weight: 800;
+    color: aliceblue;
+    text-align: center;
+}
+
+//EVENTS
+.event{
+    padding-top: 20px;
+}
+
+.event--slideshow {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+
+    & .event--slide {
+        margin: 10px;
+        width: 8rem;
+        height: 10rem;
+        display: grid;
+        background-image: url(../img/img1.jpg);
+        box-shadow: 10px 5px 5px rgba(100, 100, 100, 0.377);
+        grid-template-columns: 100%;
+        justify-items: center;
+        align-items: center;
+        
+        & .event--type {
+            padding: 5px;
+            width: 75%;
+            background-color: $bgColor2;
+            font-family: $accentFont;
+            color: $accentColor1;
+            text-align: center;
+        }
+    }
+}
+
+//ABOUT WINK
+.container--wink {
+    margin: 0 20px;
+    padding: 20px 0;
+    border: hidden;
+}
+
+.text--full--center {
+    position: relative;
+    padding: 10px;
+    top: -60px;
+    z-index: 2;
+    background-color: $bgColor2;
+}
+
+//REFERENCES and CONTACT
+.cover {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/img1.jpg);
+
+    & button {
+        width: 10rem;
+        height: 4rem;
+        font-family: $accentFont;
+        font-size: 1.5rem;
+        color: $accentColor1;
+        background-color: $bgColor2;
+        border: hidden;
+    }
+}
+
+//EXPERIENCE HIGHLIGHTS
+.container--experience{
+    border-top: hidden;
+    border-bottom: hidden;
+}
+
+.text--small--center{
+    width: 75%;
+    height: 5rem;
+    margin: 0 10%;
+    padding: 10px;
+    position: relative;
+    top: -60px;
+    z-index: 2;
+    background-color: $bgColor2;
+    text-align: center;
+    line-height: 5rem;
+}
+
+//CONTACT *see references

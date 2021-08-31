@@ -101,7 +101,9 @@ input, select {
 }
 
 body {
+  width: 100vw;
   background-color: #a9c6cf;
+  overflow-x: hidden;
 }
 
 section {
@@ -120,12 +122,11 @@ section {
   padding: 60px 0;
   width: calc(100vw - 40px);
   background-color: #a9c6cf;
-  border-top: solid 2px #33728d;
   border-bottom: solid 2px #33728d;
 }
 
 .heading--center {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   width: 100%;
   font-family: "Indie Flower", cursive;
   font-size: 2.5rem;
@@ -142,26 +143,42 @@ p {
   line-height: 1.5rem;
 }
 
+.center {
+  padding-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
 .img--set--left {
   width: 75vw;
   position: relative;
-  left: -20px;
+  left: -350px;
   z-index: 1;
   border-radius: 0 15px 15px 0;
+  -webkit-transition: all 3000ms;
+  transition: all 3000ms;
+}
+
+.img--set--left.shifted--from--left {
+  left: -20px;
 }
 
 .img--set--right {
   width: 75vw;
   position: relative;
-  right: -75px;
+  right: -300px;
   z-index: 1;
   border-radius: 15px 0 0 15px;
+}
+
+.img--set--right.shifted--from--right {
+  right: -60px;
 }
 
 header {
   position: fixed;
   top: 0;
-  height: 2rem;
+  height: 4rem;
   width: 100vw;
   padding: 1rem;
   z-index: 9;
@@ -170,6 +187,8 @@ header {
   border-bottom: solid 1px #0d518b;
   -webkit-transition: all 0.50s ease-in;
   transition: all 0.50s ease-in;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header h1 {
@@ -209,7 +228,7 @@ header h1 {
   position: absolute;
   top: calc(100vh - 75vh);
   width: 100vw;
-  font-size: 100px;
+  font-size: 5rem;
   font-family: "Acme", sans-serif;
   font-weight: 800;
   color: aliceblue;
@@ -233,8 +252,8 @@ header h1 {
 
 .event--slideshow .event--slide {
   margin: 10px;
-  width: 8rem;
-  height: 10rem;
+  width: 10rem;
+  height: 12rem;
   display: -ms-grid;
   display: grid;
   background-image: url(../img/img1.jpg);
@@ -297,7 +316,6 @@ header h1 {
 }
 
 .container--experience {
-  border-top: hidden;
   border-bottom: hidden;
 }
 
@@ -312,5 +330,15 @@ header h1 {
   background-color: #eaf0f1;
   text-align: center;
   line-height: 5rem;
+}
+
+.js--scroll {
+  opacity: 0;
+  -webkit-transition: all 3000ms;
+  transition: all 3000ms;
+}
+
+.js--scroll.scrolled {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
