@@ -6,12 +6,12 @@ const logo = document.getElementById('logo');
 //CHANGING HEADER ON SCROLL
 window.onscroll = function() {
     if (window.scrollY > 130) {
-        headerBg.style.background = 'rgb(234, 240, 241)';
-        headerBg.style.borderBottom = 'solid 1px rgb(19, 43, 53)';
-        logo.style.color = 'rgb(19, 43, 53)';
+        headerBg.style.background = 'none';
+        headerBg.style.borderBottom = 'solid 1px aliceblue';
+        logo.style.color = 'rgb(13, 81, 139)';
     } else {
         headerBg.style.background = 'none';
-        headerBg.style.borderBottom = 'solid 1px rgb(234, 240, 241)';
+        headerBg.style.borderBottom = 'solid 1px rgb(13, 81, 139)';
         logo.style.color = 'rgb(234, 240, 241)';
     }
   }
