@@ -148,19 +148,6 @@ header {
     border: hidden;
 }
 
-.img--set--left {
-    width: 75vw;
-    position: relative;
-    left: -350px;
-    z-index: 1;
-    border-radius: 0 15px 15px 0;
-    transition: all 3000ms;
-
-    &.shifted--from--left {
-    left: -20px;
-    } 
-}
-
 .text--full--center {
     position: relative;
     padding: 10px;
@@ -199,29 +186,13 @@ header {
 .experience--block {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 25% 75%;
     width: 100vw;
 
     & .img--set--right {
-        grid-area: 1/1/2/3;
-        justify-self: flex-end;
-        width: 75vw;
-        z-index: 1;
-        border-radius: 15px 0 0 15px;
-        transition: all 3000ms;
-    }
-
-    & .img--set--left {
-        grid-area: 1/1/2/3;
-        justify-self: flex-start;
-        width: 75vw;
-        z-index: 1;
-        border-radius: 0 15px 15px 0;
-        transition: all 3000ms;
+        column;
     }
 
     & .text--small--center {
-        grid-area: 2/1/3/3;
         align-self: center;
         justify-self: center;
         width: 75%;
@@ -234,7 +205,29 @@ header {
     }
 }
 
+.img--set--left {
+    width: 75vw;
+    position: relative;
+    left: -350px;
+    z-index: 1;
+    border-radius: 0 15px 15px 0;
+    transition: all 3000ms;
 
+    &.shifted--from--left {
+    left: -20px;
+    } 
+}
+
+
+.img--set--right {
+    width: 75vw;
+    z-index: 1;
+    border-radius: 15px 0 0 15px;
+
+    &.shifted--from--right {
+        right: -60px;
+        } 
+}
 
 
 

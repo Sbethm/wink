@@ -205,10 +205,6 @@ header {
     & .img--set--right {
         grid-area: 1/1/2/3;
         justify-self: flex-end;
-        width: 75vw;
-        z-index: 1;
-        border-radius: 15px 0 0 15px;
-        transition: all 3000ms;
     }
 
     & .img--set--left {

@@ -148,19 +148,6 @@ header {
     border: hidden;
 }
 
-.img--set--left {
-    width: 75vw;
-    position: relative;
-    left: -350px;
-    z-index: 1;
-    border-radius: 0 15px 15px 0;
-    transition: all 3000ms;
-
-    &.shifted--from--left {
-    left: -20px;
-    } 
-}
-
 .text--full--center {
     position: relative;
     padding: 10px;
@@ -208,7 +195,6 @@ header {
         width: 75vw;
         z-index: 1;
         border-radius: 15px 0 0 15px;
-        transition: all 3000ms;
     }
 
     & .img--set--left {
@@ -233,8 +219,6 @@ header {
         line-height: 5rem;
     }
 }
-
-
 
 
 
