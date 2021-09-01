@@ -66,6 +66,7 @@
     const displayScrollElement = (element) => {
     element.classList.add("scrolled");
     };
+
     const hideScrollElement = (element) => {
     element.classList.remove("scrolled");
     };
@@ -78,7 +79,7 @@
         el.classList.remove('shifted--from--left');    
     }
 
-    //Shift right functions into view
+    //Shift right functions
     const shiftOnScreenRight = (el) => {
         el.classList.add('shifted--from--right'); 
     }

@@ -78,7 +78,7 @@
         el.classList.remove('shifted--from--left');    
     }
 
-    //Shift right functions into view
+    //Shift right functions
     const shiftOnScreenRight = (el) => {
         el.classList.add('shifted--from--right'); 
     }

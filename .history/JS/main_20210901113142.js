@@ -8,7 +8,7 @@
 */
 
 
-//1. HEADER CAROUSEL 
+//HEADER CARASOULE 
     //Header variables
     const slides = document.querySelectorAll('#slide--img');
     const headerBg = document.getElementById('headerBg');
@@ -27,7 +27,7 @@
         }
     }
 
-    //Index main slideshow 
+    //Index main slideshow NDEX MAIN SLIDESHOW
     setInterval(nextImg, 4000);
 
     let currentImg = 0;
@@ -39,11 +39,10 @@
         slides[currentImg].style.opacity = 1;
     }
 
-//2. SCROLL ANIMATIONS
-    //Scroll variables
-    const scrollElements = document.querySelectorAll(".js--scroll");
-    const fromLeftElements = document.querySelectorAll(".img--set--left");
-    const fromRightElements = document.querySelectorAll(".img--set--right");
+//SCROLL ANIMATIONS
+const scrollElements = document.querySelectorAll(".js--scroll");
+const fromLeftElements = document.querySelectorAll(".img--set--left");
+const fromRightElements = document.querySelectorAll(".img--set--right");
 
     //When element is on screen or off scree
     const elementInView = (el) => {
@@ -66,6 +65,7 @@
     const displayScrollElement = (element) => {
     element.classList.add("scrolled");
     };
+
     const hideScrollElement = (element) => {
     element.classList.remove("scrolled");
     };
@@ -78,7 +78,7 @@
         el.classList.remove('shifted--from--left');    
     }
 
-    //Shift right functions into view
+    //Shift right functions
     const shiftOnScreenRight = (el) => {
         el.classList.add('shifted--from--right'); 
     }

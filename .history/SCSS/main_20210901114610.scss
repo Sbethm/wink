@@ -198,7 +198,7 @@ header {
 
 .experience--block {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 100vw 100vw;
     grid-template-rows: 25% 75%;
     width: 100vw;
     overflow-x: hidden;
@@ -227,6 +227,7 @@ header {
     }
 
     & .text--small--center {
+        //grid-area: 2/1/2/3;
         align-self: center;
         justify-self: center;
         width: 75%;

@@ -227,6 +227,7 @@ header {
     }
 
     & .text--small--center {
+        grid-area: 2/1/3/3;
         align-self: center;
         justify-self: center;
         width: 75%;

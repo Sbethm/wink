@@ -8,13 +8,13 @@
 */
 
 
-//1. HEADER CAROUSEL 
+//HEADER CARASOULE 
     //Header variables
     const slides = document.querySelectorAll('#slide--img');
     const headerBg = document.getElementById('headerBg');
     const logo = document.getElementById('logo');
 
-    //Changing header on scroll 
+    //CHANGING HEADER ON SCROLL
     window.onscroll = function() {
         if (window.scrollY > 130) {
             headerBg.style.background = 'rgb(234, 240, 241)';
@@ -24,26 +24,25 @@
             headerBg.style.background = 'none';
             headerBg.style.borderBottom = 'solid 1px rgb(234, 240, 241)';
             logo.style.color = 'rgb(234, 240, 241)';
-        }
     }
+  }
 
-    //Index main slideshow 
-    setInterval(nextImg, 4000);
+//INDEX MAIN SLIDESHOW
+setInterval(nextImg, 4000);
 
-    let currentImg = 0;
+let currentImg = 0;
+slides[currentImg].style.opacity = 1;
+
+function nextImg() {
+    slides[currentImg].style.opacity = 0;
+    currentImg = (currentImg + 1) % slides.length;
     slides[currentImg].style.opacity = 1;
+}
 
-    function nextImg() {
-        slides[currentImg].style.opacity = 0;
-        currentImg = (currentImg + 1) % slides.length;
-        slides[currentImg].style.opacity = 1;
-    }
-
-//2. SCROLL ANIMATIONS
-    //Scroll variables
-    const scrollElements = document.querySelectorAll(".js--scroll");
-    const fromLeftElements = document.querySelectorAll(".img--set--left");
-    const fromRightElements = document.querySelectorAll(".img--set--right");
+//SCROLL ANIMATIONS
+const scrollElements = document.querySelectorAll(".js--scroll");
+const fromLeftElements = document.querySelectorAll(".img--set--left");
+const fromRightElements = document.querySelectorAll(".img--set--right");
 
     //When element is on screen or off scree
     const elementInView = (el) => {
@@ -66,6 +65,7 @@
     const displayScrollElement = (element) => {
     element.classList.add("scrolled");
     };
+
     const hideScrollElement = (element) => {
     element.classList.remove("scrolled");
     };
@@ -78,7 +78,7 @@
         el.classList.remove('shifted--from--left');    
     }
 
-    //Shift right functions into view
+    //Shift right functions
     const shiftOnScreenRight = (el) => {
         el.classList.add('shifted--from--right'); 
     }
