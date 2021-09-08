@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Comfortaa:wght@400;500;600;700&family=Indie+Flower&display=swap" rel="stylesheet">
+    <!--
+        font-family: 'Acme', sans-serif;
+        font-family: 'Comfortaa', cursive;
+        font-family: 'Indie Flower', cursive;
+    -->
+
+    <link rel="stylesheet" href="./CSS/main.css">
+    <title>Wink Danenberg: The Greatest Showman</title>
+</head>
+<body>
+    <header id="headerBg">
+        <h1 id="logo">Wink</h1>
+        <div class="menu--btn">
+            <ul class="menu">
+                <li class="menu--item">Shows</li>
+                <li class="menu--item">Wink</li>
+                <li class="menu--item">Calender</li>
+                <li class="menu--item">Contact</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="main--slideshow">
+            <!--images are set on automatic slide-->
+                <img src="./img/img1.jpg" alt="" id="slide--img">
+                <img src="./img/img2.jpg" alt="" id="slide--img">
+                <img src="./img/img3.jpg" alt="" id="slide--img">
+            <div class="slideshow--quote">Comedy for the Whole Family!</div>
+        </section>
+        <!--CALL-TO-->
+        <div class="call-to-action">Let Wink Danenberg be a part of your school’s next athletic RETREAT!</div>
+        <!--SHOWS- 
+            Description of Wink's shows. What does he do? Who are the shows geared towards? etc.-->
+        <section class="show">
+            <div class="container container--show">
+                <a href="./shows.html"><h2 class="heading--center">Shows</h2></a>
+                <p class="info--short center">A perfect presentation to help foster team building through: cooperation, competition, and coordination.</p>
+                <div class="show--slideshow">
+                    <!--each div is set on a swipe slide-->
+                    <a href=""><div class="show--retreats show--slide">
+                        <p class="show--type">Retreats</p>
+                    </div></a>
+                    <a href=""><div class="show--schools show--slide">
+                        <p class="show--type">Schools</p>
+                    </div></a>
+                    <a href=""><div class="show--events show--slide">
+                        <p class="show--type">Events</p>
+                    </div></a>
+                </div>
+            </div>
+        </section>
+         <!--WINK- 
+            Who is Wink? A little about Wink and his past experience as a showman -->
+        <section class="wink">
+            <div class="container container--wink">
+                <h2 class="heading--center">Wink Danenberg</h2>
+                <div class="img--container">
+                    <img src="./img/img2.jpg" alt="" class="img--set--left js--scroll"> 
+                </div> 
+                <p class="text--full--center">
+                    …about Wink Danenberg
+                    Standing at 6 foot 4… 240 pounds- Wink Danenberg is responsible for the laughter of audiences  across the country. His comedy juggling, unicycling, and audience participation have kept people  entertained and enthralled at countless events, including festivals, comedy clubs, schools, cruise  
+                    ships, and libraries. His high energy and raw antics are a perfect blend to captivate and amaze  both the audience and himself. Wink Danenberg, a true original, is the only juggler who: offers a  full money back guarantee, can drive a standard with one hand, and has never taken a selfie. 
+                </p>
+            </div>
+        </section>
+         <!--REFERENCES- 
+            A section with a link to references for Wink's shows-->
+        <section class="references cover">
+            <!--CHANGE BTN TO DIV & CHECK CSS-->
+            <div class="link--click ">References</div>
+        </section>
+         <!-- HIGHLIGHTS- 
+            A section that shows some of the highlights of his experience-->
+        <section class="highlights">
+            <div class="container container--highlights">
+                <h2 class="heading--center">Highlights</h2>
+                <div class="highlights--block">
+                    <img src="./img/img2.jpg" alt="" class="img--set--right js--scroll"> 
+                <p class="text--small--center">As Seen at Letter Man!</p>
+                </div>
+                <div class="highlights--block">
+                    <img src="./img/img2.jpg" alt="" class="img--set--left js--scroll"> 
+                    <p class="text--small--center">As Seen at Letter Man!</p>
+                </div>
+                <div class="highlights--block">
+                        <img src="./img/img2.jpg" alt="" class="img--set--right js--scroll"> 
+                    <p class="text--small--center">As Seen at Letter Man!</p>
+                </div>
+            </div>
+        </section>
+         <!--CONTACT- 
+            email and (maybe) phone information about how to contact Wink-->
+        <section class="contact cover">
+            <!--CHANGE BTN TO DIV & CHECK CSS-->
+            <div class="link--click ">Contact</div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
