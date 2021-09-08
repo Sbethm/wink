@@ -126,15 +126,23 @@ section {
   padding: 60px 0;
   width: calc(100vw - 40px);
   background-color: #a9c6cf;
+  border-top: solid 2px #33728d;
   border-bottom: solid 2px #33728d;
 }
 
-.heading--center {
-  padding-bottom: 30px;
-  width: 100%;
+a {
+  color: #132b35;
+}
+
+.link--click {
+  width: 10rem;
+  height: 4rem;
   font-family: "Indie Flower", cursive;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  color: #132b35;
   text-align: center;
+  line-height: 4rem;
+  background-color: #eaf0f1;
 }
 
 a {
@@ -145,6 +153,14 @@ p {
   font-family: "Comfortaa", cursive;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.heading--center {
+  padding-bottom: 30px;
+  width: 100%;
+  font-family: "Indie Flower", cursive;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .center {
@@ -297,23 +313,15 @@ header h1 {
   background-image: url(../img/img1.jpg);
 }
 
-.cover button {
-  width: 10rem;
-  height: 4rem;
-  font-family: "Indie Flower", cursive;
-  font-size: 1.5rem;
-  color: #132b35;
-  background-color: #eaf0f1;
-  border: hidden;
-}
-
-.container--experience {
+.container--highlights {
   margin-left: 0;
   margin-right: 0;
+  width: auto;
+  border-top: hidden;
   border-bottom: hidden;
 }
 
-.experience--block {
+.highlights--block {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100vw;
@@ -324,7 +332,7 @@ header h1 {
   overflow-x: hidden;
 }
 
-.experience--block .img--set--right {
+.highlights--block .img--set--right {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -339,11 +347,11 @@ header h1 {
   transition: all 3000ms;
 }
 
-.experience--block .shifted--from--right {
+.highlights--block .shifted--from--right {
   padding-left: 0px;
 }
 
-.experience--block .img--set--left {
+.highlights--block .img--set--left {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -357,7 +365,7 @@ header h1 {
   transition: all 3000ms;
 }
 
-.experience--block .text--small--center {
+.highlights--block .text--small--center {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

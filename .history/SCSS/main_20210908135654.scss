@@ -26,23 +26,15 @@ section {
     padding: 60px 0;
     width: calc(100vw - 40px);
     background-color: $bgColor1;
-    border-top: solid 2px $accentColor2;
     border-bottom: solid 2px $accentColor2;
 }
 
-a {
-    color: $accentColor1;
-}
-
-.link--click {
-    width: 10rem;
-    height: 4rem;
+.heading--center {
+    padding-bottom: 30px;
+    width: 100%;
     font-family: $accentFont;
-    font-size: 1.5rem;
-    color: $accentColor1;
+    font-size: 2.5rem;
     text-align: center;
-    line-height: 4rem;
-    background-color: $bgColor2;
 }
 
 a {
@@ -53,14 +45,6 @@ p {
     font-family: $mainFont;
     font-size: 1rem;
     line-height: 1.5rem;
-}
-
-.heading--center {
-    padding-bottom: 30px;
-    width: 100%;
-    font-family: $accentFont;
-    font-size: 2.5rem;
-    text-align: center;
 }
 
 .center {
@@ -195,16 +179,14 @@ header {
     background-image: url(../img/img1.jpg);
 }
 
-//HIGHLIGHTS
-.container--highlights{
+//EXPERIENCE HIGHLIGHTS
+.container--experience{
     margin-left: 0;
     margin-right: 0;
-    width: auto;
-    border-top: hidden;
     border-bottom: hidden;
 }
 
-.highlights--block {
+.experience--block {
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: 25% 75%;
