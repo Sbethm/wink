@@ -412,19 +412,44 @@ header {
 
 .highlights--block {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 100vw;
     grid-template-rows: 25% 75%;
-    width: 100%;
+    width: 100vw;
 
     & .img--set--right {
+        position: relative;
+        left: 300px;
+        grid-area: 1/1/2/3;
+        justify-self: flex-end;
+        width: 75vw;
+        z-index: 1;
+        border-radius: 15px 0 0 15px;
+        transition: all 3000ms;
 
         &.shifted--from--right{
-            transform: translateX(-280px);
+            transform: translateX(-480px);
         }
     }
 
+    & .img--set--left {
+        grid-area: 1/1/2/3;
+        justify-self: flex-start;
+        width: 75vw;
+        z-index: 1;
+        border-radius: 0 15px 15px 0;
+        transition: all 3000ms;
+    }
+
     & .text--small--center {
+        align-self: center;
+        justify-self: center;
         width: 50%;
+        height: 5rem;
+        padding: 10px;
+        z-index: 2;
+        background-color: $bgColor2;
+        text-align: center;
+        line-height: 5rem;
     }
 }
 

@@ -424,6 +424,8 @@ header {
     }
 
     & .text--small--center {
+        align-self: center;
+        justify-self: center;
         width: 50%;
     }
 }

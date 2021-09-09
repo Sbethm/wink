@@ -424,7 +424,15 @@ header {
     }
 
     & .text--small--center {
+        align-self: center;
+        justify-self: center;
         width: 50%;
+        height: 5rem;
+        padding: 10px;
+        z-index: 2;
+        background-color: $bgColor2;
+        text-align: center;
+        line-height: 5rem;
     }
 }
 

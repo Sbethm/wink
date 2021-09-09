@@ -412,19 +412,27 @@ header {
 
 .highlights--block {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 100;
     grid-template-rows: 25% 75%;
     width: 100%;
 
     & .img--set--right {
 
         &.shifted--from--right{
-            transform: translateX(-280px);
+            transform: translateX(-480px);
         }
     }
 
     & .text--small--center {
+        align-self: center;
+        justify-self: center;
         width: 50%;
+        height: 5rem;
+        padding: 10px;
+        z-index: 2;
+        background-color: $bgColor2;
+        text-align: center;
+        line-height: 5rem;
     }
 }
 
