@@ -215,7 +215,7 @@ header {
     }
 
     & .shifted--from--right{
-        transform: translateX(-250px);
+        padding-left: 0px;
     }
 
     & .img--set--left {
@@ -255,10 +255,6 @@ header {
 .js--scroll.scrolled{
     opacity: 1;
 }
-
-.shifted--from--left {
-    transform: translateX(330px);
-} 
 
 //2. TABLET STYLING
     //2.1 LANDSCAPE

@@ -159,16 +159,13 @@ header {
     margin: 0 20px;
     padding: 20px 0;
     border: hidden;
+
+    &.img--container {
+        
+    }
 }
 
-.img--set--left {
-    width: 75vw;
-    position: relative;
-    left: -350px;
-    z-index: 1;
-    border-radius: 0 15px 15px 0;
-    transition: all 3000ms;
-}
+
 
 .text--full--center {
     position: relative;
@@ -215,7 +212,7 @@ header {
     }
 
     & .shifted--from--right{
-        transform: translateX(-250px);
+        padding-left: 0px;
     }
 
     & .img--set--left {
@@ -255,10 +252,6 @@ header {
 .js--scroll.scrolled{
     opacity: 1;
 }
-
-.shifted--from--left {
-    transform: translateX(330px);
-} 
 
 //2. TABLET STYLING
     //2.1 LANDSCAPE

@@ -1,7 +1,7 @@
 /*
  TABLE OF CONTENTS
     1. Header Carousel
-    2. Scroll Animations
+    2.
     3.
     4.
     5.

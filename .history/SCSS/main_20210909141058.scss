@@ -168,6 +168,10 @@ header {
     z-index: 1;
     border-radius: 0 15px 15px 0;
     transition: all 3000ms;
+
+    &.shifted--from--left {
+    transform: translateX(350px);
+    } 
 }
 
 .text--full--center {
@@ -215,7 +219,7 @@ header {
     }
 
     & .shifted--from--right{
-        transform: translateX(-250px);
+        padding-left: 0px;
     }
 
     & .img--set--left {
@@ -255,10 +259,6 @@ header {
 .js--scroll.scrolled{
     opacity: 1;
 }
-
-.shifted--from--left {
-    transform: translateX(330px);
-} 
 
 //2. TABLET STYLING
     //2.1 LANDSCAPE
@@ -336,72 +336,69 @@ header {
         #slide--img {
             height: 50vh;
         }
-    
+    }
 
-        //2.1.3 SHOWS
-        .show{
-            margin: 0 100px;
-            width: calc(100vw - 200px);
-        }
-        
-        .show--slideshow {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            overflow: scroll;
-        
-            & .show--slide {
-                margin: 20px;
-                width: 12rem;
-                height: 15rem;
-                box-shadow: 15px 10px 10px rgba(100, 100, 100, 0.377);
-                
-                & .show--type {
-                    padding: 10px;
-                }
+    //2.1.3 SHOWS
+    .show{
+        margin: 0 100px;
+        width: calc(100vw - 200px);
+    }
+    
+    .show--slideshow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        overflow: scroll;
+    
+        & .show--slide {
+            margin: 20px;
+            width: 12rem;
+            height: 15rem;
+            box-shadow: 15px 10px 10px rgba(100, 100, 100, 0.377);
+            
+            & .show--type {
+                padding: 10px;
             }
         }
+    }
 
-        //2.1.4 ABOUT WINK
-        //ABOUT WINK
-        .container--wink {
-            border: hidden;
-            overflow: hidden;
+    //2.1.4 ABOUT WINK
+    //ABOUT WINK
+    .container--wink {
+        border: hidden;
+    }
 
-            &.img--set--left {
-                width: 75vw;
-                position: relative;
-                left: -350px;
-                z-index: 1;
-                border-radius: 0 15px 15px 0;
-                transition: all 3000ms;
-    
-                &.shifted--from--left {
-                    transform: translateX(350px);
-                } 
-            }
-        }
+    // .img--set--left {
+    //     width: 75vw;
+    //     position: relative;
+    //     left: -350px;
+    //     z-index: 1;
+    //     border-radius: 0 15px 15px 0;
+    //     transition: all 3000ms;
 
-        
+    //     &.shifted--from--left {
+    //     left: -20px;
+    //     } 
+    // }
 
-        .text--full--center {
-            position: relative;
-            margin: 0 40px;
-            padding: 40px;
-            top: -160px;
-        }
+    .text--full--center {
+        position: relative;
+        margin: 0 40px;
+        padding: 40px;
+        top: -160px;
+    }
 
-        //2.1.5 REFERENCES AND CONTACT
-        //REFERENCES and CONTACT
-        .cover {
-            width: calc(100vw - 200px);
-            height: 70vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url(../img/img1.jpg);
-        }
-    } 
+    //2.1.5 REFERENCES AND CONTACT
+    //REFERENCES and CONTACT
+    .cover {
+        width: calc(100vw - 200px);
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/img1.jpg);
+    }
+
 
     //2.2 PORTRAIT
     @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {

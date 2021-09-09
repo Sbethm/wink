@@ -168,6 +168,10 @@ header {
     z-index: 1;
     border-radius: 0 15px 15px 0;
     transition: all 3000ms;
+
+    &.shifted--from--left {
+    transform: translateX(330px);
+    } 
 }
 
 .text--full--center {
@@ -215,7 +219,7 @@ header {
     }
 
     & .shifted--from--right{
-        transform: translateX(-250px);
+        padding-left: 0px;
     }
 
     & .img--set--left {
@@ -225,6 +229,10 @@ header {
         z-index: 1;
         border-radius: 0 15px 15px 0;
         transition: all 3000ms;
+        
+        &.shifted--from--left {
+            transform: translateX(330px);
+            } 
     }
 
     & .text--small--center {
@@ -255,10 +263,6 @@ header {
 .js--scroll.scrolled{
     opacity: 1;
 }
-
-.shifted--from--left {
-    transform: translateX(330px);
-} 
 
 //2. TABLET STYLING
     //2.1 LANDSCAPE
@@ -367,22 +371,20 @@ header {
         .container--wink {
             border: hidden;
             overflow: hidden;
-
-            &.img--set--left {
-                width: 75vw;
-                position: relative;
-                left: -350px;
-                z-index: 1;
-                border-radius: 0 15px 15px 0;
-                transition: all 3000ms;
-    
-                &.shifted--from--left {
-                    transform: translateX(350px);
-                } 
-            }
         }
 
-        
+        .img--set--left {
+            width: 75vw;
+            position: relative;
+            left: -350px;
+            z-index: 1;
+            border-radius: 0 15px 15px 0;
+            transition: all 3000ms;
+
+            &.shifted--from--left {
+                transform: translateX(350px);
+            } 
+        }
 
         .text--full--center {
             position: relative;
